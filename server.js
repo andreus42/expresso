@@ -14,9 +14,8 @@ app.use(cors());
 app.use(errorhandler());
  
 
-// const apiRouter = require('./api/api');
-// app.use('/api', apiRouter);
-
+const apiRouter = require('./api/api');
+app.use('/api', apiRouter);
 
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
